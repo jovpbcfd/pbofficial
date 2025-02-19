@@ -46,9 +46,9 @@
 
 /build
 
-
-
 # misc
+.htaccess
+.panalobetoffice_start.sh
 
 .DS_Store
 
