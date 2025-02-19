@@ -2523,9 +2523,9 @@ h4 {
 .image-placeholder {
   position: relative;
   width: 100%; /* Make the container responsive */
-  max-width: 588px; /* Limit the max-width */
+  max-width: 471px; /* Limit the max-width */
   height: 0;
-  padding-top: 89.9%; /* (529/588) * 100 = 89.9%, this maintains the aspect ratio */
+  padding-top: 78.9%; /* (471/597) * 100 = 89.9%, this maintains the aspect ratio */
   background-color: #ccc; /* Placeholder background color */
   border-radius: 8px; /* Optional, for rounded corners */
   overflow: hidden;
@@ -2580,4 +2580,21 @@ h4 {
   .card {
       flex: 1 1 100%; /* 1 item per row for mobile */
   }
+}
+
+
+.three-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.three-card-child {
+  background-color: #001E86;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.heading-gap-top {
+  margin-top: 20px;
 }
