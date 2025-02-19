@@ -1,0 +1,185 @@
+.hero-section{
+    padding: 10px 0;
+    .hero-inner{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .hero-slider{
+        overflow: hidden;
+        position: relative;
+        padding: 0 5px;
+        .hero-image{
+            padding: 0 5px;
+            transition: all 200ms linear;
+            opacity: 1;
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 30px;
+                transition: all 500ms linear;
+               
+            }
+           &:not(.slick-active){
+            opacity: 0.5;
+           } 
+           @media screen and (max-width:980px) {
+                min-height: 300px;
+                overflow: hidden;
+                border-radius: 30px;
+                padding: 0;
+                position: relative;
+                img{
+                    max-width: unset;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+           }
+           @media screen and (max-width:480px) {
+                min-height: 150px;
+                overflow: hidden;
+                border-radius: 20px;
+                padding: 0;
+                position: relative;
+                img{
+                    max-width: unset;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+        }
+        }
+        .slick-prev, .slick-next{
+            z-index: 9;
+        }
+        .slick-prev{
+            left: 0px !important;
+        }
+        .slick-next{
+            right: 0px !important;
+        }
+        .slick-dots{
+            bottom: -35px;
+            button{
+                &:before{
+                    opacity: 1;
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+            li.slick-active{
+                button{
+                    &:before{
+                        opacity: 1;
+                        color: var(--yellow)
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+
+
+.hero-banner{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    .inner-wrapper{
+        border-radius: 30px;
+        background-image: url(../images/wave-pattern.png);
+        background-position: center bottom;
+        background-size: cover;
+        background-color: #061E73;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        min-height: 340px;
+        .hero-copy{
+            flex: 0 60%;
+            padding: 40px 0;
+            h1{
+                line-height: 1em;
+                margin-bottom: 30px;
+            }
+            position: relative;
+            z-index: 3;
+        }
+        .hero-img{
+            position: relative;
+            flex: 0 30%;
+            z-index: 1;
+            img{
+                position: absolute;
+                top: var(--topPostion);
+                left: 42%;
+                transform: translate(-50%, -50%);
+                animation: levitate 6s ease-in-out infinite
+            }
+        }
+        @media screen and (max-width: 980px) {
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            overflow: hidden;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-image: -moz-linear-gradient(0deg, rgb(0 5 24) 0%, rgba(255, 255, 255, 0) 100%);
+                background-image: -webkit-linear-gradient(0deg, rgb(0 5 24) 0%, rgba(255, 255, 255, 0) 100%);
+                background-image: linear-gradient(0deg, rgb(0 5 24) 0%, rgba(255, 255, 255, 0) 100%);
+                z-index: 2;
+                  
+            }
+            .hero-copy{
+                flex: 0 100%;
+                padding: 0px 0 40px;
+            }
+            .hero-img{
+                flex: 0 100%;
+                text-align: center;
+                img{
+                    position: relative;
+                    top: unset;
+                    left: unset;
+                    transform: unset;
+                    max-width: 500px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .hero-copy{
+                flex: 1;
+                padding: 20px 0 40px;
+
+            }
+            .hero-img{
+                flex: 1;
+                text-align: center;
+                img{
+                    position: relative;
+                    top: unset;
+                    left: unset;
+                    transform: unset;
+                    max-width: 500px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

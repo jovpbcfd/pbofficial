@@ -1,0 +1,52 @@
+.btn{
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms linear;
+    display: inline-block;
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: inherit;
+        &:hover{
+            text-decoration: underline;
+        }
+        
+    }
+    &.orange{
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+        &:hover{
+            background-color: #fff;
+            color: var(--orange);
+        }
+    }
+    &.ghost{
+        background-color: transparent;
+        border: 2px solid #fff;
+        &:hover{
+            background-color: #fff;
+            color: var(--orange);
+        }
+    }
+    &.blue-sky{
+        background-color: var(--blue-sky);
+        border: 2px solid var(--blue-sky);
+        &:hover{
+            color: var(--blue-sky);
+            background-color: #fff;
+        }
+    }
+    &.sunflower{
+        background-color: var(--sunflower);
+        border: 2px solid var(--sunflower);
+        &:hover{
+            color: var(--sunflower);
+            background-color: #fff;
+        }
+    }
+}
