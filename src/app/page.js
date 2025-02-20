@@ -75,11 +75,15 @@ export default  function Home() {
 				<div className="hero-inner">
 					<div className="hero-slider">
 						<div className="swiper-wrapper">
-							<div className="hero-image">
-								<img src="images/image_000001.jpg" />
+							<div className="hero-image child-container-slider">
+								<img src="images/image_000001.webp" loading="lazy" alt="Banner one" />
 							</div>
-							<div className="hero-image"><img src="images/image_95791.jpg" /></div>
-							<div className="hero-image"><img src="images/image_96819.jpg" /></div>
+							<div className="hero-image child-container-slider">
+								<img src="images/image_95791.webp" loading="lazy"  alt="Banner two" />
+							</div>
+							<div className="hero-image child-container-slider">
+								<img src="images/image_96819.webp" loading="lazy"  alt="Banner three" />
+							</div>
 						</div>
 						<div className="swiper-button-prev"></div>
 						<div className="swiper-button-next"></div>
@@ -130,105 +134,105 @@ export default  function Home() {
 					<div className="games-gallery">
 						<div className="games-box">
 							<img
-								src="images/game_fccrazybuffalo_.jpg"
+								src="images/game_fccrazybuffalo_.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_fc-merge-magic.jpg"
+								src="images/game_fc-merge-magic.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_fc-night-market.jpg"
+								src="images/game_fc-night-market.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_fcsugarbangbang.jpg"
+								src="images/game_fcsugarbangbang.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_jilichinesenewyear2.jpg"
+								src="images/game_jilichinesenewyear2.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_jili-tongitsgo.jpg"
+								src="images/game_jili-tongitsgo.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_jiliboxingking.jpg"
+								src="images/game_jiliboxingking.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_jilisuperace.jpg"
+								src="images/game_jilisuperace.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_cjili-irichbingo.jpg"
+								src="images/game_cjili-irichbingo.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_pgcandyburst.jpg"
+								src="images/game_pgcandyburst.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_pgfortunetiger.jpg"
+								src="images/game_pgfortunetiger.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_pgbuffalowin.jpg"
+								src="images/game_pgbuffalowin.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_cyesbingo-beastybingo.jpg"
+								src="images/game_cyesbingo-beastybingo.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_caesexybaccarat.jpg"
+								src="images/game_caesexybaccarat.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
 						</div>
 						<div className="games-box">
 							<img
-								src="images/game_cevolution-speedbaccarat.jpg"
+								src="images/game_cevolution-speedbaccarat.webp"
 								alt="crazy buffalo"
 								loading="lazy"
 							/>
@@ -355,8 +359,9 @@ export default  function Home() {
 						<div className="blurb-box">
 							<div className="blurb-img">
 								<img
-									src="images/live-casino.png"
+									src="images/live-casino.webp"
 									style={{ animation: "float 6s ease-in-out infinite" }}
+									alt="Live Casino"
 									loading="lazy"
 
 								/>
@@ -376,9 +381,10 @@ export default  function Home() {
 						<div className="blurb-box">
 							<div className="blurb-img">
 								<img
-									src="images/slot-games.png"
+									src="images/slot-games.webp"
 									style={{ animation: "float 4s ease-in-out infinite" }}
 									loading="lazy"
+									alt="Live Casino"
 								/>
 							</div>
 							<div className="blurb-copy">
@@ -395,10 +401,10 @@ export default  function Home() {
 						<div className="blurb-box">
 							<div className="blurb-img">
 								<img
-									src="images/cockfight.png"
+									src="images/cockfight.webp"
 									style={{ animation: "float 6.5s ease-in-out infinite" }}
 									loading="lazy"
-
+									alt="Cockfight"
 								/>
 							</div>
 							<div className="blurb-copy">
@@ -417,7 +423,8 @@ export default  function Home() {
 
 						<div className="blurb-box">
 							<div className="blurb-img">
-								<img src="images/sports-img.png" style={{ animation: "float 4.5s ease-in-out infinite" }} loading="lazy"
+								<img src="images/sports-img.webp" style={{ animation: "float 4.5s ease-in-out infinite" }} loading="lazy"
+								alt="Sports"
 								/>
 							</div>
 							<div className="blurb-copy">
@@ -436,7 +443,7 @@ export default  function Home() {
 
 							<div className="blurb-box">
 							<div className="blurb-img">
-								<img src="images/lottery-bingo-img.png" style={{ animation: "float 5.2s ease-in-out infinite" }} loading="lazy"
+								<img src="images/lottery-bingo-img.webp" style={{ animation: "float 5.2s ease-in-out infinite" }} loading="lazy"
 								/>
 							</div>
 							<div className="blurb-copy">
@@ -455,7 +462,7 @@ export default  function Home() {
 						<div className="blurb-box">
 							<div className="blurb-img">
 								<img
-									src="images/promotion-img.png"
+									src="images/promotion-img.webp"
 									style={{ animation: "float 5.5s ease-in-out infinite" }}
 									loading="lazy"
 
