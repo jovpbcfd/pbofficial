@@ -18,8 +18,11 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
 	return (
 		<>
-		
-			 <GoogleTagManager gtmId="G-DNEH0HMLKW" />
+			<meta
+				name="msvalidate.01"
+				content="75A513BE09DD1B3EBAF879C3F32F0115"
+      		/>
+			<GoogleTagManager gtmId="G-DNEH0HMLKW" />
 			<body id="top" 	className={montserrat.className}>
 				<Header />
 				{children}

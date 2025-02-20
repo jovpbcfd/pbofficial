@@ -2526,7 +2526,7 @@ h4 {
   max-width: 471px; /* Limit the max-width */
   height: 0;
   padding-top: 78.9%; /* (471/597) * 100 = 89.9%, this maintains the aspect ratio */
-  background-color: #ccc; /* Placeholder background color */
+  /* background-color: #ccc; Placeholder background color */
   border-radius: 8px; /* Optional, for rounded corners */
   overflow: hidden;
 }
